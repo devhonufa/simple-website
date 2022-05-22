@@ -1,0 +1,67 @@
+/* header css coding*/
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    .navbar {
+        background-image: linear-gradient(to right, $primary_color, $secondary_color);
+        padding: 10px 0 !important;
+        .navbar-brand{
+            font-family: 'Oleo Script Swash Caps',
+                    cursive;
+            color: $logo;
+            font-size: 29px;
+            animation: simple 1s linear infinite;
+            animation-direction: alternate;
+
+                @keyframes simple {
+                    from {
+                        transform: rotate(5deg);
+                    }
+
+                    to {
+                        transform: rotate(-5deg);
+                    }
+
+                }
+        }
+            .navbar-nav {
+                
+                .nav-item {
+                    text-align: center;
+                    display: flex;
+                    font-size: 19px;
+                    font-weight: 600;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 0 12px;
+                        .nav-link{
+                          color: $white;
+                          font-size: 16px;
+                          padding: 6px 15px;
+                            &:hover{
+                              color: $white;
+                              background-image: linear-gradient(to right, $primary_color, $secondary_color);
+                              
+                            }    
+                        }
+                        .active{
+                          color: $white;
+                          background-image: linear-gradient(to right, $primary_color, $secondary_color);
+                          padding: 6px 15px;
+                        }
+                }
+            }
+         .navbar-toggler{
+             outline: $white !important;
+        }
+
+        .fa-bars{
+           color: $white;
+           font-size: 30px !important;
+        }
+    }
+  
+      
+}

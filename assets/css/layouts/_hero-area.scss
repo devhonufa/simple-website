@@ -1,0 +1,69 @@
+/* hero area coding */
+#hero-area{
+    background-image: linear-gradient(to right, $primary_color, $secondary_color);
+    padding-top: 50px;
+    // padding-top: 5%;
+    .hero-text-area{
+        height: 70vh;
+        @include content_center(flex-start);
+        h2{
+            font-size: 40px;
+            color: $white;
+            font-weight: 700;
+            margin-bottom: 15px;
+            span{
+                color: $span_color;
+                font-size: 40px;
+                font-weight: 800;
+            }
+
+        }
+        p{
+            color: $white;
+
+        }
+        // hero area button
+        .hero-btn{
+            margin-top: 15px;
+            .my_btn {
+                @include mybtn;
+            }
+            .play-btn{
+                margin-right: 20px;
+                @include myborder;
+                
+                .fa-regular{
+                    font-size: 24px;
+                    margin-right: 8px;
+                }
+
+            }
+
+        }
+        
+
+
+    }
+    // hero area img animation
+    .img-fluid{
+        height: 70vh;
+        @include content_center(flex-end);
+        filter: drop-shadow(0 24px 16px rgba(0, 0, 0, 0.8));
+        animation: hero-img 10s linear infinite alternate;
+
+        @keyframes hero-img {
+            from {
+                transform: scale(0.9);
+            }
+
+            to {
+                transform: scale(1);
+            }
+
+        }
+    }
+    .bottom-img {
+        width: 100%;
+    }
+}
+

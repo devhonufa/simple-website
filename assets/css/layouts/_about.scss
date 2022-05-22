@@ -1,0 +1,36 @@
+#about{
+    background: $bg_color;
+    padding: 70px 0;
+    .title {
+        z-index: 2;
+    }
+    .about-us{
+        p{
+         font-size: 30px;
+         font-weight: 700;
+        //  margin-top: 20px;
+        //  margin-left: 19px;
+         margin: 20px 0 0 19px;
+        }
+        .list-group{
+            background: transparent;
+            margin-top: 10px;
+            
+
+            .list-group-item {
+              background: transparent;
+              border: none;
+              color: $txt_color;
+              font-weight: 500;
+              i{
+                  font-size: 25px;
+                  color: $primary_color;
+                  margin-right: 15px;
+              }
+            }
+        }
+    }
+    .about-img{
+        margin: 20px 0;
+    }
+}

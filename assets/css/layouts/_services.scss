@@ -1,0 +1,60 @@
+// services section css code
+#services{
+    padding: 60px 0;
+    text-align: center;
+    .single-service{
+        padding: 20px;
+        border: 2px solid $primary_color;
+        border-radius: 10px;
+        margin: 10px;
+        z-index: 2;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            background-color: $primary_color;
+            h4{
+                color: $white;
+            }
+            p{
+               color: $white;
+            }
+        }
+        
+        img{
+            width: 25%;
+            margin-bottom: 10px;
+            z-index: -1;
+
+        }
+        h4{
+            font-size: 25px;
+            color: $blak;
+            font-weight: 600;
+
+        }
+        p{
+            color: $blak;
+
+        }
+    }
+    .btn-primary{
+        box-shadow: none;
+        padding: 8px 25px;
+        margin: 30px 0;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+        border: none;
+        background-color: transparent;
+        background-image: linear-gradient(to right, $primary_color, $secondary_color);
+        transition: all 0.3s ease 0s;
+        &:hover{
+          outline: 2px solid $primary_color;
+          background: transparent;
+          color: $primary_color;
+        }
+        
+        
+
+    }
+}

@@ -1,0 +1,99 @@
+// ----------------------------footer-------------------
+#footer-section{
+    background-image: linear-gradient(to right, $primary_color, $secondary_color);
+    padding-bottom: 10px;
+    img{
+        width: 100%;
+    }
+    .footer-items{
+        padding: 20px;
+        .navbar-brand{
+            font-family: 'Oleo Script Swash Caps',
+            cursive;
+            color: $logo;
+            font-size: 29px;
+            animation: logo 2s linear infinite;
+            animation-direction: alternate;
+
+            @keyframes logo{
+                from {
+                    transform: rotate(10deg);
+                }
+
+                to {
+                    transform: rotate(-10deg);
+                }
+
+            }
+        }
+        hr{
+            background: $white;
+        }
+        .text{
+          color: $white;
+          text-align: left;
+        }
+        p{
+            color: $white;
+            display: flex;
+            align-items: center;
+            .fa-solid{
+                margin-right: 10px;
+                font-size: 19px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                border-radius: 3px;
+                padding-top: 9px;
+                background-image: linear-gradient(to right, $primary_color, $secondary_color);
+            }
+        }
+        h5{
+            color: $white;
+            margin: 10px 0 30px 0;
+        }
+        .btn {
+            background-image: linear-gradient(to right, $primary_color, $secondary_color);
+            color: $white;
+            transition: .3s ease-in;
+            font-weight: 600;
+            margin-top: 20px;
+            box-shadow: none;
+            border: none;
+
+            &:hover {
+                background: $white;
+                color: $primary_color;
+            }
+        }
+        input{
+            max-width: 250px;
+        }
+        .social-icons{
+            display: flex;
+             .nav-link {
+                 margin: 10px 0;
+                 padding: 0;
+                 &:hover {
+                     img {
+                         transform: translatey(-10px);
+                     }
+                 }
+
+                 img {
+                     width: 45px;
+                     transition: .3s all;
+
+                 }
+             }
+        }
+        
+    }
+    hr {
+        background: $white;
+    }
+    p{
+        text-align: center;
+        color: $white;
+    }
+}
